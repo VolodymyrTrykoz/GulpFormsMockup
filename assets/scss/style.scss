@@ -1,0 +1,151 @@
+@import 'icons/iconfont__variables';
+@import 'icons/iconfont__icons';
+//Google fonts font-family: 'Cabin', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+
+
+
+//======Variables=========//
+  $white: white;
+  $light-gray: #f2f5f8;
+  $middle-gray: #c6ccd2;
+  
+//========================//
+//======Placeholders=========//
+%align-center {
+  text-align: center;
+}
+
+%bg-img-centering {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; 
+}
+
+%form-header__sign-styles {
+  font-weight: 600;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+%input-size-stls {
+  width: 80%;
+  margin-top: 3rem;
+  border: 2px solid $middle-gray;
+  border-radius: 0.5rem;
+  height: 4.5rem;
+}
+
+%inactive-placeholder {
+  background-repeat: no-repeat;
+  background-position: 1em 50%;
+  padding-left: 3em;
+  color: $middle-gray;
+
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                font-size: 1em;
+                color: $middle-gray;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+                font-size: 1em;
+                color: $middle-gray;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+                font-size: 1em;
+                color: $middle-gray;
+            }
+            &:placeholder { /* Firefox 18- */
+                color: $middle-gray;
+                font-size: 1em;
+            }
+}
+
+//==============================//
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  /*font-family: 'icomoon' !important;*/
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ 
+//======================================//
+html {
+  font-size: 62.5%;
+}
+ * {
+  font-family: 'Cabin', sans-serif;
+ }
+
+
+.container {
+  width: 96rem;
+  margin: 0 auto;
+}
+
+
+.left-form {
+   width: 45%;
+} 
+
+.form__form-header {
+  position: relative;
+} 
+.form-header__inf, %form-header__inf {
+  position: absolute;
+  right: 1.7rem;
+  top: 2rem;
+  font-size: 1.4rem;
+  color: $white;
+  text-decoration: none;
+        
+          &:hover {
+            color: pink;
+          }
+
+}
+
+.form-header__sign, %form-header__sign {
+  @extend %align-center;
+  @extend %bg-img-centering;
+  @extend %form-header__sign-styles;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 6rem 0;
+  background-image: url("../img/form-bg1.jpg"); 
+  color: $white;
+
+}
+
+
+.form__form-internal {
+  background: $light-gray;
+  display: flex;
+  justify-content: center;
+
+}
+
+.form-internal__email {
+  @extend %input-size-stls;
+  @extend %inactive-placeholder;
+  background-image: url("../icons/e-mail-envelope.svg");
+  
+}
+
+
+
+
+
+
+
