@@ -1,3 +1,4 @@
+@import 'base/normalize';
 @import 'icons/iconfont__variables';
 @import 'icons/iconfont__icons';
 //Google fonts font-family: 'Cabin', sans-serif;
@@ -10,12 +11,28 @@
   $white: white;
   $light-gray: #f2f5f8;
   $middle-gray: #c6ccd2;
+  $light-blue-light: #65abd0;
+  $button-blue-light-hov: #4d90b4;
+  $button-blue-dark: #3162a2;
+  $button-blue-dark-hover: #123561;
+  $grey-divider-color: #dee2e7;
+  $green: #24aa98;
+  $green-dark: #1c8275;
+
+
   
-//========================//
-//======Placeholders=========//
-%align-center {
-  text-align: center;
+//========Mixines=========//
+
+@mixin border-top-radius($val){
+  border-top-left-radius: ($val);
+  border-top-right-radius: ($val);
 }
+@mixin border-bottom-radius($val){
+  border-bottom-left-radius: ($val);
+  border-bottom-right-radius: ($val);
+}
+
+//======Placeholders=========//
 
 %bg-img-centering {
   background-repeat: no-repeat;
@@ -30,18 +47,27 @@
   letter-spacing: 0.2rem;
 }
 
-%input-size-stls {
-  width: 80%;
-  margin-top: 3rem;
-  border: 2px solid $middle-gray;
+%border2px {
+    border: 2px solid $middle-gray;
+}
+
+%form-item-sz-style {
   border-radius: 0.5rem;
   height: 4.5rem;
 }
+
+%form-btn-sz-style {
+  border-radius: 0.5rem;
+  padding: 0.7em 0;
+  transition: all 0.2s;
+}
+
 
 %inactive-placeholder {
   background-repeat: no-repeat;
   background-position: 1em 50%;
   padding-left: 3em;
+  font-size: 1.4em;
   color: $middle-gray;
 
             &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -62,6 +88,29 @@
             }
 }
 
+%link-sm-styles {
+  font-size: 1.4rem;
+  text-decoration: none;
+  display: block;
+}
+
+%btn-link-styles {
+  text-decoration: none;
+  display: block;
+  color: $white;
+  
+}
+
+%flex-just-center {
+  display: flex;
+  justify-content: center;
+}
+
+%flex-center-alignement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 //==============================//
 
 .icon {
@@ -91,11 +140,20 @@ html {
 
 .container {
   width: 96rem;
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 
+//===============First row================//
 
-.left-form {
+
+//===========First row__left-form=========//
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section1__form-wrapper {
    width: 45%;
 } 
 
@@ -103,49 +161,165 @@ html {
   position: relative;
 } 
 .form-header__inf, %form-header__inf {
+  @extend %link-sm-styles;
   position: absolute;
   right: 1.7rem;
   top: 2rem;
-  font-size: 1.4rem;
-  color: $white;
-  text-decoration: none;
-        
+  color: $white;      
           &:hover {
-            color: pink;
+            color:  $button-blue-light-hov;
           }
-
 }
 
-.form-header__sign, %form-header__sign {
-  @extend %align-center;
+.form-header__sign {
   @extend %bg-img-centering;
   @extend %form-header__sign-styles;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  @include border-top-radius(0.5rem);
+  text-align: center;
   padding: 6rem 0;
-  background-image: url("../img/form-bg1.jpg"); 
   color: $white;
+}
 
+.form-header__sign--left{
+background-image: url("../img/form-bg1.jpg"); 
 }
 
 
 .form__form-internal {
+  @include border-bottom-radius(0.5rem);
   background: $light-gray;
-  display: flex;
-  justify-content: center;
-
+  text-align: center;
+  overflow: hidden;
 }
 
-.form-internal__email {
-  @extend %input-size-stls;
+.form-internal__input {
+  @extend %form-item-sz-style;
+  @extend %border2px;
   @extend %inactive-placeholder;
-  background-image: url("../icons/e-mail-envelope.svg");
+  margin-top: 3rem;
+  width: 80%;
+}
+
+.form-internal__input--email {
+   background-image: url("../icons/e-mail-envelope.svg");
+}
+.form-internal__input--password {
+   background-image: url("../icons/padlock.svg");
+}
+
+.form-internal__authoris-support {
+   @extend %link-sm-styles;
+   font-weight: 600;
+   margin-top: 1.5em;
+   letter-spacing: 0.05em;
+   color: $middle-gray;
+       &:hover {
+            color:  $button-blue-light-hov;
+          }
+}
+
+.form-internal__btn {
+  @extend %btn-link-styles;
+  @extend %form-btn-sz-style;
   
+  font-size: 1.8rem;
+  margin: 1.5em auto 0 auto;
+  width: 80%;
+     
+}
+.form-internal__btn--blue {
+  background-color: $light-blue-light;
+   &:hover {
+            background-color: $button-blue-light-hov;
+          }
+}
+
+.form-internal__divider {
+  @extend %flex-center-alignement;
+  width:80%;
+  margin: 2.5rem auto;
+}
+
+.divider-p {
+  margin: (0 1.5em);
+  color: $grey-divider-color;
+}
+.divider {
+  width: 45%;
+  height: 0.2rem;
+  border:none;
+  background-color: $grey-divider-color;
+ }
+
+.form-internal__social-wrap {
+  @extend %flex-center-alignement;
+  width: 80%;
+  margin: 0 auto;
+ }
+
+.form-internal__social {
+  @extend %btn-link-styles;
+  @extend %form-btn-sz-style;
+  font-size: 1.6em;
+  width: 48%;
+  margin-bottom: 2.5em;
+}
+
+.form-internal__social--fb {
+   background-color:  $button-blue-dark;
+      &:hover{
+        background-color:  $button-blue-dark-hover;
+      }
+}
+
+.form-internal__social--tw {
+   background-color:  $light-blue-light;
+       &:hover{
+        background-color:  $button-blue-light-hov;
+      }
 }
 
 
+//===========First row_right-form=========//
+.form-header__sign--right {
+background-image: url("../img/form-bg2.jpg"); 
+}
+
+.form-internal__btn--green {
+  background-color: $green;
+   &:hover {
+            background-color:  $green-dark;
+          }
+}
 
 
+//===========Checkbox=========//
 
+.checkbox__input {
+  opacity: 0;
+}
+.checkbox__label {
+  position: relative;
+}
+
+.checkbox__label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: $green;
+    border-radius: 0.5rem;
+    left: -2rem;
+    top: 0.1rem;
+}
+
+ .checkbox__input:checked + .checkbox__label::before {
+    content:      "✓";
+    font-size:      12px;
+    font-weight: bold;
+    color:        #fff;
+    text-align:     center;
+}
 
 

@@ -9,11 +9,11 @@
 
 
 	<body>
-		<div class="container">
-			<div class="left-form">
+		<div class="container section1">
+			<div class="section1__form-wrapper">
 				<form action="" method="get">
 					<div class="form__form-header">
-						<div class="form-header__sign">
+						<div class="form-header__sign form-header__sign--left">
 							sign up
 						</div>
 						<a href="#" class="form-header__inf">
@@ -22,10 +22,66 @@
 					</div>
 
 					<div class="form__form-internal">
-						<input type="email" name="your-email" value="" class="form-internal__email" placeholder="E-mail or login" required>
+						<input type="email" name="your-email" value="" class="form-internal__input form-internal__input--email" placeholder="E-mail or login" required>
+						<input type="password" name="your-password" value="" class="form-internal__input form-internal__input--password" placeholder="Password" required>
+						<a href="#" class="form-internal__authoris-support">Forgot password?</a>
+						<a href="#" class="form-internal__btn form-internal__btn--blue">Sign Up</a>
+						<div class="form-internal__divider">
+							<hr class="divider">
+								<p class="divider-p">OR</p> 
+							<hr class="divider">
+						</div>
+						<div class="form-internal__social-wrap">
+							<a href="#" class="form-internal__social form-internal__social--fb">Login via Facebook</a>	
+							<a href="#" class="form-internal__social form-internal__social--tw">Login via Twitter</a>
+						</div>	
 					</div>
+
 				</form>
-			</div>		
+			</div>	
+
+
+
+			<div class="section1__form-wrapper">
+				<form action="" method="get">
+					<div class="form__form-header">
+						<div class="form-header__sign form-header__sign--right">
+							sign in
+						</div>
+						<a href="#" class="form-header__inf">
+							Create an account 
+						</a>
+					</div>
+
+					<div class="form__form-internal">
+						<input type="email" name="your-email" value="" class="form-internal__input form-internal__input--email" placeholder="E-mail or login" required>
+						<input type="password" name="your-password" value="" class="form-internal__input form-internal__input--password" placeholder="Password" required>
+
+
+
+					<div class="form-internal__checkbox">
+						<input type="checkbox" class="checkbox__input" id="checkbox-1"	name="remember password">
+						<label for="checkbox-1" class="checkbox__label ">Remember password?</label>
+					</div>	
+
+
+
+
+
+						<a href="#" class="form-internal__btn form-internal__btn--green">Sign In</a>
+						<div class="form-internal__divider">
+							<hr class="divider">
+								<p class="divider-p">OR</p> 
+							<hr class="divider">
+						</div>
+						<div class="form-internal__social-wrap">
+							<a href="#" class="form-internal__social form-internal__social--fb">Login via Facebook</a>
+							<a href="#" class="form-internal__social form-internal__social--tw">Login via Twitter</a>
+						</div>	
+					</div>
+						
+				</form>
+			</div>			
 		</div>
 	</body>
 </html>
