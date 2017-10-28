@@ -62,7 +62,12 @@ gulp.task("build:icons", function() {
     return del('./dist/css');
   });
 
-  gulp.task('iconreplace', function(){
+  gulp.task('imgreplace', function(){
     return gulp.src('assets/img/**/*')
     .pipe(gulp.dest('dist/img/'));
+  });
+
+  gulp.task('iconreplace', function(){
+    return gulp.src('assets/icons/**/*.svg')
+    .pipe(gulp.dest('dist/icons/'));
   });
