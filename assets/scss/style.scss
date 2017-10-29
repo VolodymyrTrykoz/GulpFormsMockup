@@ -21,6 +21,8 @@
   $dark: #383737;
   $red: #db7560;
   $red-dark: #d13b1d;
+  $light-brown: #d9c26c;
+  $dark-brown: #ad9539;
 
   
 //========Mixines=========//
@@ -48,7 +50,7 @@
 
 
 %border2px {
-    border: 2px solid $middle-gray;
+  border: 2px solid $middle-gray;
 }
 
 %form-item-sz-style {
@@ -193,6 +195,7 @@
 html {
   font-size: 62.5%;
 }
+
  * {
   font-family: 'Cabin', sans-serif;
  }
@@ -215,7 +218,7 @@ html {
 
 .section1__form-wrapper {
   @extend %form-style;
-  width: 45%;
+  width: 49%;
  } 
 
 .form__form-header {
@@ -297,15 +300,19 @@ html {
 }
 
 
-.form-internal__input {
-
+.form-internal__input, %form-internal__input {
   @extend %form-item-sz-style;
   @extend %border2px;
   @extend %inactive-placeholder;
   @extend %width-center;
   @extend %flex-center-alignement;
-  margin-top: 3rem;
+  
 
+ }
+
+ .form-internal__input--m3 {
+  @extend %form-internal__input;
+  margin-top: 3rem;
  }
 
 
@@ -522,11 +529,13 @@ background-image: url("../img/form-bg2.jpg");
 
 .small-forms-wrap {
   width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .small-form {
   @extend %small-form-appear;
-  margin-bottom: 1rem;
   overflow: hidden;
 }
 
@@ -534,13 +543,14 @@ background-image: url("../img/form-bg2.jpg");
   margin-top: 1rem;
 }
 
-.marbot2 {
-  margin-bottom: 2rem;
+.marbot3 {
+  margin-bottom: 3rem;
 }
 .marleft0 {
   margin-left: 0;
 }
 .input {
+  width: 100%;
   border:none;
   outline: none;
   background: transparent;
@@ -548,17 +558,45 @@ background-image: url("../img/form-bg2.jpg");
       border: none;
     } 
 }
+
+
+
 .subscribing-form {
   border-radius: 0.5rem;
   background-color: $light-gray;
+  overflow: hidden;
  
 }
 
 .subscribing-form-wrapper {
-   @extend %width-left-start;
+   @extend %width-center;
 }
 
 .subform-internal-wrap {
   @extend %flex-center-alignement;
+  margin: 2.7rem 0;
+  overflow: hidden;
+
 }
+
+.authoris-support--amandments {
+  margin: 0;
+}
+
+.icon--open {
+  font-size: 1.4rem;
+  padding: 1.1em 1.5em;
+  margin-left: 1rem;
+  -webkit-text-fill-color: $white;
+  background-color: $light-brown;
+  border: none;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+      &:hover {
+        background-color: $dark-brown;
+      }
+     
+}
+
+
 //%flex-just-between

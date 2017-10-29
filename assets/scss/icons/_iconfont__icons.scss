@@ -17,14 +17,44 @@ $global-font-icon: 'social';
     /* Some common icon stuff */
   }
 
+  &.icon--dark-e-mail {
+    &:before {
+      content: $icon-dark-e-mail;
+    }
+  }
+  &.icon--dark-padlock {
+    &:before {
+      content: $icon-dark-padlock;
+    }
+  }
   &.icon--e-mail-envelope {
     &:before {
       content: $icon-e-mail-envelope;
     }
   }
+  &.icon--fb {
+    &:before {
+      content: $icon-fb;
+    }
+  }
+  &.icon--forward {
+    &:before {
+      content: $icon-forward;
+    }
+  }
+  &.icon--open {
+    &:before {
+      content: $icon-open;
+    }
+  }
   &.icon--padlock {
     &:before {
       content: $icon-padlock;
+    }
+  }
+  &.icon--tw {
+    &:before {
+      content: $icon-tw;
     }
   }
 
