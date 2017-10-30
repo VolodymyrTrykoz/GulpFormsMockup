@@ -37,11 +37,6 @@ $global-font-icon: 'social';
       content: $icon-fb;
     }
   }
-  &.icon--forward {
-    &:before {
-      content: $icon-forward;
-    }
-  }
   &.icon--open {
     &:before {
       content: $icon-open;
