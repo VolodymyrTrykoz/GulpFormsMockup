@@ -17,6 +17,11 @@ $global-font-icon: 'social';
     /* Some common icon stuff */
   }
 
+  &.icon--arrow-down {
+    &:before {
+      content: $icon-arrow-down;
+    }
+  }
   &.icon--dark-e-mail {
     &:before {
       content: $icon-dark-e-mail;
@@ -35,6 +40,11 @@ $global-font-icon: 'social';
   &.icon--fb {
     &:before {
       content: $icon-fb;
+    }
+  }
+  &.icon--forward {
+    &:before {
+      content: $icon-forward;
     }
   }
   &.icon--open {

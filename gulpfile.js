@@ -4,15 +4,40 @@
       postcss      = require('gulp-postcss'),
       autoprefixer = require('autoprefixer'),
       browser      = require('browser-sync').create(),
-      iconfont     = require('gulp-iconfont'),
-      del          = require('del'),
-      consolidate  = require('gulp-consolidate');
+      iconfont     = require("gulp-iconfont"),
+      svgstore     = require('gulp-svgstore'),
+      svgmin       = require('gulp-svgmin'),
+      consolidate  = require("gulp-consolidate");
+
+gulp.task('svgstore', function () {
+    return gulp
+        .src('assets/icons/*.svg')
+        .pipe(svgmin(function (file) {
+           
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix:'svg-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+        .pipe(svgstore())
+        .pipe(gulp.dest('dist/svg'));//path to my folder
+});
+
+
 
 gulp.task('sass', function () {
   return gulp.src('assets/scss/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
-      output_style: 'compressed'
+      output_style: 'compressed',
+      includePaths: [
+                     'node_modules/foundation-sites/scss',
+                     'node_modules/normalize-scss/sass'
+                     ]
     }).on('error', sass.logError))
     .pipe(postcss([ autoprefixer({ browsers: ['last 3 version'] }) ]))
     .pipe(sourcemaps.write('.'))
@@ -57,6 +82,10 @@ gulp.task("build:icons", function() {
   gulp.watch('./**/*.html').on('change', browser.reload);
 });
 
+
+
+
+  
 
   gulp.task('clean', function(){
     return del('./dist/css');
