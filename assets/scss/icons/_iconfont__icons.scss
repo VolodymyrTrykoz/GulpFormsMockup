@@ -42,11 +42,6 @@ $global-font-icon: 'social';
       content: $icon-fb;
     }
   }
-  &.icon--forward {
-    &:before {
-      content: $icon-forward;
-    }
-  }
   &.icon--open {
     &:before {
       content: $icon-open;
@@ -55,6 +50,11 @@ $global-font-icon: 'social';
   &.icon--padlock {
     &:before {
       content: $icon-padlock;
+    }
+  }
+  &.icon--right {
+    &:before {
+      content: $icon-right;
     }
   }
   &.icon--tw {

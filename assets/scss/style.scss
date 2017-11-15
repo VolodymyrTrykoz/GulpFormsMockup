@@ -14,6 +14,7 @@
   $light-blue-light: #65abd0;
   $button-blue-light-hov: #4d90b4;
   $button-blue-dark: #3162a2;
+  $primary: $button-blue-dark;
   $button-blue-dark-hover: #123561;
   $grey-divider-color: #dee2e7;
   $green: #24aa98;
@@ -36,13 +37,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%; 
-}
-
-%form-header__sign-styles {
-  font-weight: 600;
-  font-size: 3.2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
 }
 
 %border-none {
@@ -71,6 +65,7 @@
 %form-btn-sz-style {
   border-radius: 0.5rem;
   padding: 0.7em 0;
+  text-align: center;
   transition: all 0.2s;
 }
 
@@ -137,15 +132,6 @@
   justify-content: center;
 }
 
-.width-center80, %width-center80 {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.width-center90, %width-center90 {
-  width: 90%;
-  margin: 0 auto;
-}
 
 .flex-just-between, %flex-just-between {
   display: flex;
@@ -190,10 +176,6 @@
 }
 
 
-%small-form-appear {
-  @extend %form-style;
-  text-align: center;
-}
 
 %grey1.4 {
   font-size: 1.4rem;
@@ -289,21 +271,29 @@ html {
 
 .form-header__sign {
   @extend %bg-img-centering;
-  @extend %form-header__sign-styles;
+  font-size: 3.2rem;
+  font-weight: 600;
+  padding: 6rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
   border-top-right-radius:.5rem;
   border-top-left-radius:.5rem;
   text-align: center;
-  padding: 6rem 0;
   color: $white;
 }
 
-.form-header__sign--left{
+.form-header__sign--up{
   background-image: url("../img/form-bg1.jpg"); 
 }
 
+.form-header__sign--in {
+background-image: url("../img/form-bg2.jpg"); 
+}
 
-.form__form-internal {
-  text-align: center;
+
+.form__form-box {
+  margin: 0 3rem;
+
 }
 
 .placeholder {
@@ -361,7 +351,6 @@ html {
   @extend %form-item-sz-style;
   @extend %border2px;
   @extend %inactive-placeholder;
-  @extend %width-center80;
   @extend %flex-center-alignement;
 }
 
@@ -385,7 +374,7 @@ html {
 
 }
 
- .form-internal__input--m3 {
+ .form-internal__input--top-indent {
   @extend %form-internal__input;
   margin-top: 3rem;
  }
@@ -417,114 +406,137 @@ html {
    letter-spacing: 0.05em;
 
 }
+
+.form-internal__authoris-support--center {
+  text-align: center;
+}
+
 .form-internal__authoris-support--link {
    @extend %link-sm-styles;
-   @extend %width-center80;
    @extend %form-internal__authoris-support;
        &:hover {
           color:  $button-blue-light-hov;
         }
 }
 
-.form-internal__btn {
+.btn {
   @extend %btn-link-styles;
   @extend %form-btn-sz-style;
-  font-size: 1.8rem;
-  margin: 1.5em auto 0 auto;
-  width: 80%;
-     
-}
-.form-internal__btn--blue {
-  background-color: $light-blue-light;
-   &:hover {
-            background-color: $button-blue-light-hov;
-          }
-}
-.form-internal__btn--red {
-  background-color: $red;
-   &:hover {
+  width: 100%;
+  border: none;
+        &--lg {
+          font-size: 1.8rem;
+          margin: 1.5em auto 0 auto;
+        }
+
+
+        &--md {
+          font-size: 1.6rem;
+          padding: 1em 2em;
+        }
+
+        &--socialll {
+          font-size: 1.4rem;
+          padding-left: 1em;
+          width: 47%;
+              &-center {
+                padding-left: 0;
+              }
+        }
+
+        &--quantity {
+          @extend %brad05rem;
+          @extend %border-none;
+          width: 1.5em;
+          height: 1.5em;
+          margin: 0 0.5em;
+          color: #fff;
+        }
+
+        &--primary {
+          background-color: $primary;
+              &:hover {
+              background-color: #1d4a84;
+              }
+        }
+
+        &--info {
+          background-color: $light-blue-light;
+              &:hover {
+              background-color: $button-blue-light-hov;
+              }
+        }
+
+        &--success {
+            background-color: $green;
+            &:hover {
+            background-color:  $green-dark;
+            }
+        }
+
+        &--danger {
+          background-color: $red;
+          &:hover {
             background-color: $red-dark;
           }
+        }
 }
 
-.form-internal__btn--green, %bg-green {
-  background-color: $green;
-   &:hover {
-            background-color:  $green-dark;
-          }
-}
 
-.form-internal__divider {
-  @extend %flex-center-alignement;
-  width:  80%;
+
+.form-internal__divider-box {
   margin: 2.5rem auto;
 }
 
-.divider-p {
-  margin: (0 1.5em);
-  color: $grey-divider-color;
-}
+
+
 .divider {
-  @extend %border-none;
-  width: 45%;
-  height: 0.2em;
-  background-color: $grey-divider-color;
-}
+  position: relative;
+  border: 0;
+  text-align: center;
+  margin: 0;
+  color: $grey-divider-color;
+  width: 100%;
+  height: 1.8rem;
+  font-size: 1.5rem;
+        
+
+        &:before {
+            content:    '';
+            background: $grey-divider-color;
+            position:   absolute;
+            left:       0;
+            top:        50%;
+            transform: translateY(-50%);
+            width:      100%;
+            height:     0.15em;
+          }
+
+          &:after {
+            content:    attr(data-content);
+            position:   relative;
+            display:    inline-block;
+            padding:    0 1em;
+            background: $light-gray;
+          }
+      
+
+}  
+
+
+
 
 .form-internal__social-wrap {
   @extend %flex-center-alignement;
-  @extend %width-center80;
+  
  }
-
-.form-internal__social {
-  @extend %btn-link-styles;
-  @extend %form-btn-sz-style;
-  font-size: 1.6rem;
-  width: 47%;
-  background-repeat: no-repeat;//these properties for small Facebook and Twitter buttons
-  background-position: 1.5em 50%;//these properties for small Facebook and Twitter buttons
-}
-
-.form-internal__social--small {
-  font-size: 1.4rem;
-  padding-left: 1em;
-}
-
-.form-internal__social--small-fb {
-  background-image: url(../icons/fb.svg);
-}
-
-.form-internal__social--small-tw {
-  background-image: url(../icons/tw.svg);
-}
-
-.form-internal__social--fb {
-   background-color:  $button-blue-dark;
-      &:hover{
-        background-color:  $button-blue-dark-hover;
-      }
-}
-
-.form-internal__social--tw {
-   background-color:  $light-blue-light;
-       &:hover{
-        background-color:  $button-blue-light-hov;
-      }
-}
-
-
-//===========First section__right-form=========//
-.form-header__sign--right {
-background-image: url("../img/form-bg2.jpg"); 
-}
-
 
 
 
 //===========Checkbox=========//
 
 .form-internal__checkbox-wrap, %width-left-start {
-  @extend %width-center80;
+ 
   text-align: left;
   margin-top: 2.1em;
   margin-bottom: 1.5em;
@@ -577,13 +589,13 @@ background-image: url("../img/form-bg2.jpg");
 
 .section2__form-wrapper {
   width: 32%;
-  @extend %small-form-appear;
+  
   
 }
 
 .form-internal-wrap {
    @extend %flex-center-alignement;
-   @extend %width-center80;
+  
 }
 
 
@@ -592,18 +604,12 @@ background-image: url("../img/form-bg2.jpg");
   font-size: 1.6rem;
   font-weight: 600;
   text-transform: uppercase;
-  
  
-}
-.form__heading--left-shift {
-  @extend %form__heading;
-  margin-left: -0.5em;
 }
 
 .form__heading-supp-link {
   @extend %link-sm-styles;
   display: inline-block;
-  margin-right: -0.5em;
   color: $light-blue-light;
       &:hover {
       color: $button-blue-light-hov;
@@ -618,7 +624,7 @@ background-image: url("../img/form-bg2.jpg");
 }
 
 .small-form {
-  @extend %small-form-appear;
+  
   overflow: hidden;
 }
 .martop {
@@ -664,9 +670,6 @@ background-image: url("../img/form-bg2.jpg");
  
 }
 
-.subscribing-form-wrapper {
-   @extend %width-center80;
-}
 
 .subform-internal-wrap {
   @extend %flex-center-alignement;
@@ -677,6 +680,7 @@ background-image: url("../img/form-bg2.jpg");
 
 .authoris-support--amandments {
   margin: 0;
+  
 }
 
 .icon--open {
@@ -710,9 +714,6 @@ background-image: url("../img/form-bg2.jpg");
   @extend %form-style;
   width: 32%;
 }
-.contact-internal-wrapper {
- @extend %width-center80; 
-}
 
 .contact-form__int-wrap {
   display: flex;
@@ -723,18 +724,19 @@ background-image: url("../img/form-bg2.jpg");
   width: 45%;
 }
 
-.contact-internal-wrapper--w90 {
-  width: 90%;
-}
-
 .item-name {
   font-size: 1.6rem;
-  margin: 2em 0 0.5em 0;
   color: $middle-gray;
+
+        &--left {
+          text-align: left;
+        }
 }
+
+
 .button-select, %button-select {
   width: 100%;
-  height: 99%;
+  height: 100%;
   outline: none;
   border-radius: 0.3rem;
   font-size: 1.6rem;
@@ -774,19 +776,6 @@ background-image: url("../img/form-bg2.jpg");
 
 .flex-center-alignement {
   @extend %flex-center-alignement;
-}
-
-
-
-
-.service-button, %service-button {
-  @extend %bg-green;
-  @extend %border-none;
-  @extend %brad05rem; 
-  color: $white;
-  font-size: 1.6rem;
-  padding: 1em 3em;
-  transition: all 0.2s;
 }
 
 
@@ -839,7 +828,7 @@ background-image: url("../img/form-bg2.jpg");
 
 .table-item--heading {
   text-align: left;
-  padding-left: 12em;
+  padding-left: 7em;
 }
 
 .border-bottom {
@@ -849,15 +838,6 @@ background-image: url("../img/form-bg2.jpg");
 .td-text {
   font-size: 1.6rem;
   font-weight: 600;
-}
-
-.quantity {
-  @extend %brad05rem;
-  @extend %border-none;
-  color: $white;
-  width: 1.5em;
-  height: 1.5em;
-  margin: 0 0.5em;
 }
 
 .color-pic-wrap {
@@ -964,10 +944,11 @@ input[type='radio']:checked:after {
 
   }
 
-  .service-button--arrow:after {
-     content:'›';
-     padding-left: 0.5em;
-     font-size: 15px;
+  .arrow-right:after {
+     content: "\EA08";
+     font-family: "social";
+     padding-left: 1em;
+     font-size: 0.9rem;
   }
 
 
