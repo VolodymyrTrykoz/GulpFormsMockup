@@ -11,10 +11,10 @@
 	<body>
 
 
-	<!--First section-->		
+	
 
 		<div class="container flex-just-between">
-			<div class="section1__form-wrapper">
+			<div class="form-wrapper-1">
 				
 					<div class="form__form-header">
 						<div class="form-header__sign form-header__sign--up">
@@ -26,20 +26,27 @@
 					</div>
 				<form action="" method="get">
 					<div class="form__form-box">
-						<div class="form-internal__input--top-indent input__email placeholder">
-							<input type="email" name="your-email" value="" class="input placeholder--inactive" placeholder="E-mail or login" required>
+						<div class="form__input--top-indent placeholder">
+							<input type="email" name="your-email" value="" class="input" placeholder="E-mail or login" required>
+							<span class="icon icon--e-mail-envelope"></span>
 						</div>
-						<div class="form-internal__input--top-indent input__password password placeholder">	
-							<input type="password" name="your-password" value="" class="input placeholder--inactive" placeholder="Password" required>
+
+						<div class="form__input--top-indent placeholder">	
+							<input type="password" name="your-password" value="" class="input" placeholder="Password" required>
+							<span class="icon icon--dark-padlock"></span>
 						</div>	
-						<a href="#" class="form-internal__authoris-support--link form-internal__authoris-support--center">Forgot password?</a>
+
+						<a href="#" class="form__text form__text--link form__text--center">Forgot password?</a>
+
 						<button class="btn btn--lg btn--info">Sign Up</button>
+
 						<div class="form-internal__divider-box">
 							<hr class="divider" data-content="OR">
 						</div>
+
 						<div class="form-internal__social-wrap">
-							<button class="btn btn--socialll btn--socialll-center btn--primary">Login via Facebook</button>
-							<button class="btn btn--socialll btn--socialll-center btn--info">Login via Twitter</button>
+							<button class="btn btn--socialll btn--primary">Login via Facebook</button>
+							<button class="btn btn--socialll btn--info">Login via Twitter</button>
 						</div>	
 					</div>
 
@@ -47,7 +54,7 @@
 			</div>	
 
 
-			<div class="section1__form-wrapper">
+			<div class="form-wrapper-1">
 				
 
 					<div class="form__form-header">
@@ -62,12 +69,16 @@
 
 				<form action="" method="get">
 					<div class="form__form-box">
-						<div class="form-internal__input--top-indent input__email placeholder">
-							<input type="email" name="your-email" value="" class="input placeholder--inactive" placeholder="E-mail or login" required>
+						<div class="form__input--top-indent placeholder">
+							<input type="email" name="your-email" value="" class="input" placeholder="E-mail or login" required>
+							<span class="icon icon--e-mail-envelope"></span>
 						</div>
-						<div class="form-internal__input--top-indent input__password placeholder">
-							<input type="password" name="your-password" value="" class="input placeholder--inactive" placeholder="Password" required>
-						</div>
+
+						<div class="form__input--top-indent placeholder">	
+							<input type="password" name="your-password" value="" class="input" placeholder="Password" required>
+							<span class="icon icon--dark-padlock"></span>
+						</div>	
+
 						<div class="form-internal__checkbox-wrap">
 							<input type="checkbox" class="checkbox__input" id="checkbox-1"	name="remember password">
 							<label for="checkbox-1" class="checkbox__label ">Remember password?</label>
@@ -81,8 +92,8 @@
 
 						<div class="form-internal__social-wrap">
 							
-							<button class="btn btn--socialll btn--socialll-center btn--primary">Login via Facebook</button>
-							<button class="btn btn--socialll btn--socialll-center btn--info">Login via Twitter</button>
+							<button class="btn btn--socialll btn--primary">Login via Facebook</button>
+							<button class="btn btn--socialll btn--info">Login via Twitter</button>
 							
 						</div>	
 					</div>
@@ -92,11 +103,11 @@
 		</div>
 
 
-	<!--Second section-->	
+	
 
-	<div class="container section2">
+	<div class="container flex-just-between">
 
-		<div class="section2__form-wrapper form-style">
+		<div class="form-wrapper-2 form-style">
 			<form action="" method="get">
 				<div class="form__form-box">
 					<div class="form-internal-wrap">
@@ -107,30 +118,38 @@
 					</div>
 
 				
-					<div class= "form-internal__input--top-indent martop1 input__email placeholder ">
-						<input type="email" name="your-email" value="" class="input placeholder--inactive" placeholder="E-mail or login" required>
+					<div class="form__input--top-indent placeholder">
+						<input type="email" name="your-email" value="" class="input" placeholder="E-mail or login" required>
+						<span class="icon icon--e-mail-envelope"></span>
 					</div>
-					<div class="form-internal__input--top-indent input__password placeholder ">
-						<input type="password" name="your-password" value="" class="input placeholder--inactive" placeholder="Password" required>	
+					<div class="form__input--top-indent placeholder">	
+						<input type="password" name="your-password" value="" class="input" placeholder="Password" required>
+						<span class="icon icon--dark-padlock"></span>
+					</div>	
+
+
+					<a href="#" class="form__text form__text--link form__text--center">Forgot password?</a>
+
+					<button class="btn btn--lg btn--info">Sign Up</button>
+
+					<div class="form-internal__divider-box">
+						<hr class="divider" data-content="OR">
 					</div>
-					<a href="#" class="form-internal__authoris-support--link form-internal__authoris-support--center">Forgot password?</a>
 
-					<a href="#" class="btn btn--lg btn--info">Sign Up</a>
-
-							<div class="form-internal__divider-box">
-								<hr class="divider" data-content="OR">
-							</div>
-
-							<div class="form-internal__social-wrap">
-								<button class="btn btn--socialll btn--primary">Facebook</button>
-								<button class="btn btn--socialll btn--info">Twitter</button>
-							</div>
+					<div class="form-internal__social-wrap">
+						<button class="btn btn--socialll btn--primary">
+							<span class="icon icon--socialll icon--fb"></span>Facebook
+						</button>
+						<button class="btn btn--socialll btn--info">
+							<span class="icon icon--socialll icon--tw"></span>Twitter
+						</button>
+					</div>
 				</div>	
 
 			</form>	
 		</div>
 
-		<div class="section2__form-wrapper form-style">
+		<div class="form-wrapper-2 form-style">
 			<form action="" method="get">
 				<div class="form__form-box">
 					<div class="form-internal-wrap">
@@ -139,30 +158,36 @@
 							Create an account
 						</a>
 					</div>
+
+					<div class="form__input--top-indent placeholder">
+						<input type="email" name="your-email" value="" class="input" placeholder="hello@creativeda.sh" required>
+						<span class="icon icon--e-mail-envelope"></span>
+					</div>
+					<div class="form__input--top-indent placeholder">	
+						<input type="password" name="your-password" value="" class="input" placeholder="&#x25CF &#x25CF &#x25CF &#x25CF &#x25CF" required>
+						<span class="icon icon--dark-padlock"></span>
+					</div>	
 				
-					<div class="form-internal__input--top-indent martop1 input__email--active placeholder">
-						<input type="email" name="your-email" value="" class="input placeholder--active" placeholder="hello@creativeda.sh" required>
+										
+					<div class="form-internal__checkbox-wrap">
+						<input type="checkbox" class="checkbox__input" id="checkbox-2"	name="remember password">
+						<label for="checkbox-2" class="checkbox__label ">Remember password?</label>
+					</div>	
+
+					<button class="btn btn--lg btn--success">Sign In</button>
+
+					<div class="form-internal__divider-box">
+						<hr class="divider" data-content="OR">
 					</div>
 
-					<div class="form-internal__input--top-indent input__password--active placeholder">
-						<input type="password" name="your-password" value="" class="input placeholder--active" placeholder="&#x25CF &#x25CF &#x25CF &#x25CF &#x25CF" required>
+					<div class="form-internal__social-wrap">
+						<button class="btn btn--socialll btn--primary">
+							<span class="icon icon--socialll icon--fb"></span>Facebook
+						</button>
+						<button class="btn btn--socialll btn--info">
+							<span class="icon icon--socialll icon--tw"></span>Twitter
+						</button>
 					</div>
-					
-						<div class="form-internal__checkbox-wrap">
-							<input type="checkbox" class="checkbox__input" id="checkbox-2"	name="remember password">
-							<label for="checkbox-2" class="checkbox__label ">Remember password?</label>
-						</div>	
-
-							<a href="#" class="btn btn--lg btn--success">Sign In</a>
-
-							<div class="form-internal__divider-box">
-								<hr class="divider" data-content="OR">
-							</div>
-
-							<div class="form-internal__social-wrap">
-								<button class="btn btn--socialll btn--primary">Facebook</button>
-								<button class="btn btn--socialll btn--info">Twitter</button>
-							</div>	
 				</div>
 			</form>	
 		</div>
@@ -178,11 +203,12 @@
 							</a>
 						</div>
 					
-						<div class="form-internal__input martop1 input__email placeholder">
-							<input type="email" name="your-email" value="" class="input placeholder--inactive" placeholder="E-mail" required>
-						</div>	
+						<div class="form__input--top-indent placeholder">
+							<input type="email" name="your-email" value="" class="input" placeholder="E-mail" required>
+							<span class="icon icon--e-mail-envelope"></span>
+						</div>
 
-						<a href="#" class="btn btn--lg btn--danger">Reset</a>	
+						<button class="btn btn--lg btn--danger">Reset</button>	
 					</div>
 				</form>	
 			</div>
@@ -193,10 +219,11 @@
 					<div class="form__form-box">
 						<p class="form__heading">subscribing</p>
 						
-						<p class="form-internal__authoris-support authoris-support--amandments">We will never send you spam or some other trash</p>
+						<p class="form__text">We will never send you spam or some other trash</p>
 						<div class="subform-internal-wrap">
-							<div class="form-internal__input input__email placeholder">
-								<input type="email" name="your-email" value="" class="input placeholder--inactive" placeholder="E-mail" required>
+							<div class="form__input placeholder">
+								<input type="email" name="your-email" value="" class="input" placeholder="E-mail" required>
+								<span class="icon icon--e-mail-envelope"></span>
 							</div>
 							<div class="form-internal__but">
 								<button class="icon icon--open"></button>
@@ -211,7 +238,6 @@
 	</div>
 
 
-	<!--Third section-->
 
 	<div class="container">
 		<div class="contact-wrapper">
@@ -224,19 +250,19 @@
 								<div class="contact-form__int-wrap">
 									<div class="contact__half">
 										<div class="contact__item">
-											<p class="item-name">Name</p>
+											<span class="item-name">Name</span>
 											<div class="item__value">
-												<div class="item__value-input placeholder-item">
-													<input type="text" name="Name" value="" class="input placeholder--active" placeholder="Carlos Shorter" required>
+												<div class="item__value-input placeholder">
+													<input type="text" name="Name" value="" class="input input--left" placeholder="Carlos Shorter" required>
 												</div>
 											</div>
 										</div>
 
 										<div class="contact__item">
-											<p class="item-name">E-mail</p>
+											<span class="item-name">E-mail</span>
 											<div class="item__value">
-												<div class="item__value-input placeholder-item">
-													<input type="email" name="Mail" value="" class="input placeholder--active" placeholder="shotercarlos@gmail.com" required>
+												<div class="item__value-input placeholder">
+													<input type="email" name="Mail" value="" class="input input--left" placeholder="shotercarlos@gmail.com" required>
 												</div>
 											</div>
 										</div>
@@ -244,19 +270,19 @@
 
 									<div class="contact__half">
 										<div class="contact__item">
-											<p class="item-name">Subject</p>
+											<span class="item-name">Subject</span>
 											<div class="item__value">
-												<div class="item__value-input placeholder-item">
-													<input type="text" name="Subject" value="" class="input placeholder--active" placeholder="Partnership" required>
+												<div class="item__value-input placeholder">
+													<input type="text" name="Subject" value="" class="input input--left" placeholder="Partnership" required>
 												</div>
 											</div>
 										</div>
 
 										<div class="contact__item">
-											<p class="item-name">Select Budget</p>
+											<span class="item-name">Select Budget</span>
 											<div class="item__value">
 												<div class="item__value-input">
-													<select name="budget" id="#" class="select-budget">
+													<select name="budget" id="#" class="select-box">
 														<option value="">$10.000-$15.000</option>
 														<option value="">$15.000-$20.000</option>
 														<option value="">$20.000-$25.000</option>
@@ -272,17 +298,17 @@
 
 								</div>
 								<div class="contact__item">
-									<p class="item-name">Message</p>
+									<span class="item-name">Message</span>
 									<div class="item__value">
 										<div class="textarea-wrapper">
-											<textarea rows="6" class="textarea form-style placeholder--active placeholder-item"> Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.
+											<textarea rows="6" class="textarea form-style placeholder"> Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.
 											</textarea>
 										</div>
 									</div>
 								</div>
 
 
-								<div class="contact-form__int-wrap margtopbot25">
+								<div class="contact-form__int-wrap">
 									<div class="contact__item flex-vert-align">
 										<input type="checkbox" class="checkbox__input" id="checkbox-3"	name="remember password">
 										<label for="checkbox-3" class="checkbox__label ">Send me a copy</label>
@@ -307,28 +333,28 @@
 								<p class="form__heading">contact</p>
 							
 								<div class="contact__item">
-									<p class="item-name">Name</p>
+									<span class="item-name">Name</span>
 									<div class="item__value">
-										<div class="item__value-input placeholder-item">
-											<input type="text" name="Name" value="" class="input placeholder--active" placeholder="Carlos Shorter" required>
+										<div class="item__value-input placeholder">
+											<input type="text" name="Name" value="" class="input input--left" placeholder="Carlos Shorter" required>
 										</div>
 									</div>
 								</div>
 
 								<div class="contact__item">
-									<p class="item-name">E-mail</p>
+									<span class="item-name">E-mail</span>
 									<div class="item__value">
-										<div class="item__value-input placeholder-item">
-											<input type="email" name="Mail" value="" class="input placeholder--active" placeholder="shotercarlos@gmail.com" required>
+										<div class="item__value-input placeholder">
+											<input type="email" name="Mail" value="" class="input input--left" placeholder="shotercarlos@gmail.com" required>
 										</div>
 									</div>
 								</div>
 
 								<div class="contact__item">
-												<p class="item-name">Message</p>
+												<span class="item-name">Message</span>
 												<div class="item__value">
 													<div class="textarea-wrapper">
-														<textarea rows="6" class="textarea form-style placeholder--active placeholder-item">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.
+														<textarea rows="6" class="textarea form-style placeholder">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.
 														</textarea>
 													</div>
 												</div>
@@ -346,179 +372,182 @@
 
 
 
-	<!--Fourth section-->
 
-	<div class="container form-style">
+	<div class="container">
+
+
 		
 			<form action="" method="get" >
-				<div class="form__form-box">
-						<p class="form__heading">card</p>
-				
-						<table class="card__table">
+				<div class="form-style">
+					<div class="form__form-box">
+							<p class="form__heading">card</p>
+					
+							<table class="card__table">
 
-							  <tr class="border-bottom td-text">
-							    <th class="table-heading padtb15 table-item table-item--heading">Item</th>
-							    <th class="table-heading padtb15">Price</th> 
-							    <th class="table-heading padtb15">Quantity</th>
-							    <th class="table-heading padtb15">Total</th>
-							  </tr>
-
-
-							  <tr class="border-bottom td-text">
-							    <td class="table-item"><img src="dist/img/bag.jpg" alt="bag" class="padtrb15">Leather Bag</td>
-							    <td class="text-align-cent">$199</td>
-							    <td class="text-align-cent">
-									<button class="btn--quantity btn--danger">-</button>
-							    	1
-									<button class="btn--quantity btn--success">+</button>
-								</td>
-							    <td class="text-align-cent">$199</td>
-							  </tr>
+								  <tr class="border-bottom td-text">
+								    <th class="table-heading table-item table-item--heading">Item</th>
+								    <th class="table-heading">Price</th> 
+								    <th class="table-heading">Quantity</th>
+								    <th class="table-heading">Total</th>
+								  </tr>
 
 
-
-							  <tr class="border-bottom td-text">
-								    <td class="table-item item-belt-box">
-								    	<div class="table-item item__belt"><img src="dist/img/belt.jpg" alt="belt" class="padtrb15"></div>
-								    		<div class="color-pic-wrap">
-										    	<div>Leather Belt</div>
-										    	<div class="item__set-radio">
-										    		<div class="color">
-										    			Color :
-										    		</div>
-
-													<div class="radio-wrap">
-														<div class="yellow">
-														    <input type="radio" id="contactChoice1"
-														      name="color" value="yellow" class="radio__input">
-														    <label for="contactChoice1" class="radio__label"></label>
-														</div>   
-
-														<div class="blue">
-														    <input type="radio" id="contactChoice2"
-														      name="color" value="blue" class="radio__input">
-														    <label for="contactChoice2" class="radio__label"></label>
-														</div>
-
-														<div class="green">
-														    <input type="radio" id="contactChoice3"
-														      name="color" value="green" class="radio__input">
-														    <label for="contactChoice3" class="radio__label"></label>
-														</div>
-
-														<div class="red">
-														    <input type="radio" id="contactChoice4"
-														      name="color" value="red" class="radio__input">
-														    <label for="contactChoice4" class="radio__label"></label>
-														</div>
-
-														<div class="black">
-														    <input type="radio" id="contactChoice5"
-														      name="color" value="black" class="radio__input">
-														    <label for="contactChoice5" class="radio__label"></label>
-														</div>
-													    
-													</div>
-												</div>
-											</div>		  
-								    </td>
-
-								    <td class="text-align-cent">$49</td>
-
-								    <td class="text-align-cent">
-								    	<button class="btn--quantity btn--danger">-</button>
-							    		2
-										<button class="btn--quantity btn--success">+</button>
-								    </td>
-
-								    <td class="text-align-cent">$98</td>
-							  </tr>
-
-
-
-
-							  <tr class="border-bottom td-text">
-								    <td class="table-item"><img src="dist/img/shoes.jpg" alt="belt" class="padtrb15">
-
-										<div class="color-pic-wrap">
-								   			<div>Leather Shoes</div>
-											
-											<div class="item__set-radio">
-										    		<div class="color">
-										    			Color :
-										    		</div>
-
-													<div class="radio-wrap">
-														<div class="brown">
-														    <input type="radio" id="contactChoice6"
-														      name="color" value="brown" class="radio__input">
-														    <label for="contactChoice6" class="radio__label"></label>
-														</div>   
-
-														
-														<div class="black">
-														    <input type="radio" id="contactChoice7"
-														      name="color" value="black" class="radio__input">
-														    <label for="contactChoice7" class="radio__label"></label>
-														</div>
-													    
-													</div>
-
-
-													<div class="color size-item">
-										    			Size :
-										    		</div>
-
-													<div class="select-size">
-												    	<select name="size" id="#" class="size-picker">
-												    		<option value="42">42</option>
-												    		<option value="43">43</option>
-												    		<option value="44">44</option>
-												    		<option value="45">45</option>
-												    	</select>
-													</div>				
-
-											</div>
-
-										</div>
-								    </td>
+								  <tr class="border-bottom td-text">
+								    <td class="table-item"><img src="dist/img/bag.png" alt="bag" class="table-img">Leather Bag</td>
 								    <td class="text-align-cent">$199</td>
-
 								    <td class="text-align-cent">
 										<button class="btn--quantity btn--danger">-</button>
-							    		1
+								    	1
 										<button class="btn--quantity btn--success">+</button>
-								    </td>
-
+									</td>
 								    <td class="text-align-cent">$199</td>
-							  </tr>
+								  </tr>
 
-							  <tr>
-							  	<td></td>
-							  	<td></td>
-							  	<td class="table-heading padtb15 textalign-right">Subtotal:</td>
-							  	<td class="text-align-cent td-text">$496</td>
-							  </tr>
-							 
-						</table>
 
-						<div class="card-bottom martop3">	
-							<a href="#" class="form__heading-supp-link form__heading-supp-link--arrow">
-									Continue shopping
-							</a>	
 
-							<div class="contact__item">
-							 <button class="btn btn--md btn--success arrow-right">Order</button>
-							</div>
-						</div>	
+								  <tr class="border-bottom td-text">
+									    <td class="table-item item-belt-box">
+									    	<div class="table-item item__belt"><img src="dist/img/belt.png" alt="belt" class="table-img"></div>
+									    		<div class="color-pic-wrap">
+											    	<div>Leather Belt</div>
+											    	<div class="item__set-radio">
+											    		<div class="color">
+											    			Color :
+											    		</div>
+
+														<div class="radio-wrap">
+															<div class="yellow">
+															    <input type="radio" id="contactChoice1"
+															      name="color" value="yellow" class="radio__input">
+															    <label for="contactChoice1" class="radio__label"></label>
+															</div>   
+
+															<div class="blue">
+															    <input type="radio" id="contactChoice2"
+															      name="color" value="blue" class="radio__input">
+															    <label for="contactChoice2" class="radio__label"></label>
+															</div>
+
+															<div class="green">
+															    <input type="radio" id="contactChoice3"
+															      name="color" value="green" class="radio__input">
+															    <label for="contactChoice3" class="radio__label"></label>
+															</div>
+
+															<div class="red">
+															    <input type="radio" id="contactChoice4"
+															      name="color" value="red" class="radio__input">
+															    <label for="contactChoice4" class="radio__label"></label>
+															</div>
+
+															<div class="black">
+															    <input type="radio" id="contactChoice5"
+															      name="color" value="black" class="radio__input">
+															    <label for="contactChoice5" class="radio__label"></label>
+															</div>
+														    
+														</div>
+													</div>
+												</div>		  
+									    </td>
+
+									    <td class="text-align-cent">$49</td>
+
+									    <td class="text-align-cent">
+									    	<button class="btn--quantity btn--danger">-</button>
+								    		2
+											<button class="btn--quantity btn--success">+</button>
+									    </td>
+
+									    <td class="text-align-cent">$98</td>
+								  </tr>
+
+
+
+
+								  <tr class="border-bottom td-text">
+									    <td class="table-item"><img src="dist/img/shoes.png" alt="belt" class="table-img">
+
+											<div class="color-pic-wrap">
+									   			<div>Leather Shoes</div>
+												
+												<div class="item__set-radio">
+											    		<div class="color">
+											    			Color :
+											    		</div>
+
+														<div class="radio-wrap">
+															<div class="brown">
+															    <input type="radio" id="contactChoice6"
+															      name="color" value="brown" class="radio__input">
+															    <label for="contactChoice6" class="radio__label"></label>
+															</div>   
+
+															
+															<div class="black">
+															    <input type="radio" id="contactChoice7"
+															      name="color" value="black" class="radio__input">
+															    <label for="contactChoice7" class="radio__label"></label>
+															</div>
+														    
+														</div>
+
+
+														<div class="color size-item">
+											    			Size :
+											    		</div>
+
+														<div class="select-size">
+													    	<select name="size" id="#" class="size-picker">
+													    		<option value="42">42</option>
+													    		<option value="43">43</option>
+													    		<option value="44">44</option>
+													    		<option value="45">45</option>
+													    	</select>
+														</div>				
+
+												</div>
+
+											</div>
+									    </td>
+									    <td class="text-align-cent">$199</td>
+
+									    <td class="text-align-cent">
+											<button class="btn--quantity btn--danger">-</button>
+								    		1
+											<button class="btn--quantity btn--success">+</button>
+									    </td>
+
+									    <td class="text-align-cent">$199</td>
+								  </tr>
+
+								  <tr>
+								  	<td></td>
+								  	<td></td>
+								  	<td class="table-heading textalign-right">Subtotal:</td>
+								  	<td class="text-align-cent td-text">$496</td>
+								  </tr>
+								 
+							</table>
+
+							<div class="card-bottom">	
+								<a href="#" class="form__heading-supp-link form__heading-supp-link--arrow">
+										Continue shopping
+								</a>	
+
+								<div class="contact__item">
+								 <button class="btn btn--md btn--success arrow-right">Order</button>
+								</div>
+							</div>	
 					</div>	
+				</div>	
 			</form>			
 		
 	</div>
 
 
 	
-	<!--Fifth section-->
+
 
 	<div class="container">
 		<div class="form-style">
@@ -532,7 +561,7 @@
 						<div class="width30">
 
 							<div class="shipping__item">
-								<p class="item-name">Select Country</p>
+								<span class="item-name">Select Country</span>
 								<div class="item__value">
 									<div class="item__value-input item__value-input--arrow">
 										<select name="country" id="#" class="select-item">
@@ -546,7 +575,7 @@
 							</div>
 					
 							<div class="shipping__item">
-								<p class="item-name">Select City</p>
+								<span class="item-name">Select City</span>
 								<div class="item__value">
 									<div class="item__value-input item__value-input--arrow">
 										<select name="country" id="#" class="select-item">
@@ -565,19 +594,19 @@
 						<div class="width30">
 
 							<div class="contact__item">
-								<p class="item-name">State, Region, Province</p>
+								<span class="item-name">State, Region, Province</span>
 								<div class="item__value">
-									<div class="item__value-input placeholder-item">
-										<input type="text" name="California" value="" class="input placeholder--active" placeholder="California" required>
+									<div class="item__value-input placeholder">
+										<input type="text" name="California" value="" class="input input--left" placeholder="California" required>
 									</div>
 								</div>
 							</div>
 
 							<div class="contact__item">
-								<p class="item-name">Zip Code</p>
+								<span class="item-name">Zip Code</span>
 								<div class="item__value">
-									<div class="item__value-input placeholder-item">
-										<input type="text" name="zip-code" value="" class="input placeholder--active" placeholder="95661" required>
+									<div class="item__value-input placeholder">
+										<input type="text" name="zip-code" value="" class="input input--left" placeholder="95661" required>
 									</div>
 								</div>
 							</div>
@@ -588,19 +617,19 @@
 						<div class="width30">
 
 							<div class="contact__item">
-								<p class="item-name">Address1</p>
+								<span class="item-name">Address1</span>
 								<div class="item__value">
-									<div class="item__value-input placeholder-item">
-										<input type="text" name="Name" value="" class="input placeholder--active" placeholder="" required>
+									<div class="item__value-input placeholder">
+										<input type="text" name="Name" value="" class="input input--left" placeholder="" required>
 									</div>
 								</div>
 							</div>
 
 							<div class="contact__item">
-								<p class="item-name">Address2</p>
+								<span class="item-name">Address2</span>
 								<div class="item__value">
-									<div class="item__value-input placeholder-item">
-										<input type="text" name="Name" value="" class="input placeholder--active" placeholder="" required>
+									<div class="item__value-input placeholder">
+										<input type="text" name="Name" value="" class="input input--left" placeholder="" required>
 									</div>
 								</div>
 							</div>
@@ -611,16 +640,16 @@
 					</div>
 
 					
-						<p class="form__heading padtop15">contact info</p>
+						<p class="form__heading form__heading--top-indnt">contact info</p>
 
 						<div class="flex-just-between">
 								<div class="width30">
 
 									<div class="contact__item">
-										<p class="item-name">Full Name</p>
+										<span class="item-name">Full Name</span>
 										<div class="item__value">
-											<div class="item__value-input placeholder-item">
-												<input type="text" name="Name" value="" class="input placeholder--active" placeholder="" required>
+											<div class="item__value-input placeholder">
+												<input type="text" name="Name" value="" class="input input--left" placeholder="" required>
 											</div>
 										</div>
 									</div>
@@ -629,10 +658,10 @@
 								<div class="width30">
 
 									<div class="contact__item">
-										<p class="item-name">E-mail</p>
+										<span class="item-name">E-mail</span>
 										<div class="item__value">
-											<div class="item__value-input placeholder-item">
-												<input type="text" name="e-mail" value="" class="input placeholder--active" placeholder="" required>
+											<div class="item__value-input placeholder">
+												<input type="text" name="e-mail" value="" class="input input--left" placeholder="" required>
 											</div>
 										</div>
 									</div>
@@ -641,10 +670,10 @@
 								<div class="width30">
 
 									<div class="contact__item">
-										<p class="item-name">Phone</p>
+										<span class="item-name">Phone</span>
 										<div class="item__value">
-											<div class="item__value-input placeholder-item">
-												<input type="text" name="phone" value="" class="input placeholder--active" placeholder="" required>
+											<div class="item__value-input placeholder">
+												<input type="text" name="phone" value="" class="input input--left" placeholder="" required>
 											</div>
 										</div>
 									</div>
@@ -652,7 +681,7 @@
 
 						</div>
 
-						<div class="card-bottom martop3">	
+						<div class="card-bottom">	
 							<a href="#" class="form__heading-supp-link form__heading-supp-link--arrow">
 									Return to Card
 							</a>	
@@ -672,7 +701,6 @@
 
 
 
-<!--Sixth section-->
 
 	<div class="container">
 		<div class="form-style">
@@ -682,51 +710,52 @@
 							<div class="width35">
 								<p class="form__heading">payment method</p>
 								<div class="paiment__item">
-										<p class="item-name">Credit Card</p>
+										<span class="item-name">Credit Card</span>
 											<div class="flex-just-between">
-												<div class="item__value marright1">
-													<div class="item__value-input placeholder-item">
-														<input type="text" name="phone" value="" class="input placeholder--active" placeholder="" required>
+											
+													<div class="item__value-input placeholder card__box">
+														<input type="tel" maxlength="4" class="input input--left">
 													</div>
-												</div>
+											
 
-												<div class="item__value marright1">
-													<div class="item__value-input placeholder-item">
-														<input type="text" name="phone" value="" class="input placeholder--active" placeholder="" required>
+											
+													<div class="item__value-input placeholder card__box">
+														<input type="tel" maxlength="4" class="input input--left">
 													</div>
-												</div>
+											
 
-												<div class="item__value marright1">
-													<div class="item__value-input placeholder-item">
-														<input type="text" name="phone" value="" class="input placeholder--active" placeholder="" required>
+											
+													<div class="item__value-input placeholder card__box">
+														<input type="tel" maxlength="4" class="input input--left">
 													</div>
-												</div>
+											
 
-												<div class="item__value">
-													<div class="item__value-input placeholder-item">
-														<input type="text" name="phone" value="" class="input placeholder--active" placeholder="" required>
+												
+													<div class="item__value-input placeholder card__box">
+														<input type="tel" maxlength="4" class="input input--left">
 													</div>
-												</div>
+												
 											</div>
 								</div>
 
 
 								<div class="paiment__item">
-									<p class="item-name">Cardholder Name</p>
+									<span class="item-name">Cardholder Name</span>
 									<div class="item__value">
-										<div class="item__value-input placeholder-item">
-											<input type="text" name="phone" value="" class="input placeholder--active" placeholder="" required>
+										<div class="item__value-input placeholder">
+											<input type="text" name="phone" value="" class="input input--left" placeholder="" required>
 										</div>
 									</div>
 								</div>
 
 
 								<div class="paiment__item">
-									<p class="item-name">Explore</p>
+									<span class="item-name">Explore</span>
 										<div class="flex-just-between">
 											<div class="item__value width45">
 												<div class="item__value-input item__value-input--arrow">
 													<select name="month" id="#" class="select-item">
+														<option value="selected" selected>Month</option>
 														<option value="">January</option>
 														<option value="">February</option>
 														<option value="">March</option>
@@ -747,6 +776,7 @@
 											<div class="item__value width45">
 												<div class="item__value-input item__value-input--arrow">
 													<select name="date" id="#" class="select-item">
+														<option value="selected" selected>Day</option>
 														<option value="">01</option>
 														<option value="">02</option>
 														<option value="">03</option>
@@ -789,10 +819,11 @@
 
 							
 								<div class="paiment__item">
-									<p class="item-name">CVV</p>
-									<div class="item__value width35">
-										<div class="item__value-input placeholder-item">
-											<input type="text" name="phone" value="" class="input placeholder--active" placeholder="" required>
+									<span class="item-name">CVV</span>
+									<div class="item__value item__value--sm">
+										<div class="item__value-input placeholder">
+
+											<input type="password" name="cvv" value="" class="input input--left" maxlength="3" required>
 										</div>
 									</div>
 								</div>			
@@ -803,24 +834,23 @@
 							<div class="width50">
 								<p class="form__heading">billing address</p>
 								<div class="">
-									<div class="contact__item flex-vert-align martb15">
+									<div class=" flex-vert-align">
 										<input type="checkbox" class="checkbox__input" id="checkbox-4"	name="remember password">
 										<label for="checkbox-4" class="checkbox__label checkbox__label--padlef1em ">Same as shipping address</label>
-
 									</div>	
-									<p class="form-internal__authoris-support authoris-support--amandments">A hundred thousand grateful loves to your dear papa and mamma. Is your poor brother recovered of his rack-punch? Oh, dear! Oh, dear! How men should beware of wicked punch!</p>
+									<p class="form__text">A hundred thousand grateful loves to your dear papa and mamma. Is your poor brother recovered of his rack-punch? Oh, dear! Oh, dear! How men should beware of wicked punch!</p>
 								</div>	
 							</div>				
 						</div>
 					
 
-						<div class="paiment__bottom  flex-just-between">
+						<div class="paiment__bottom  flex-just-between-ai-flex-end">
 
-							<a href="#" class="form__heading-supp-link form__heading-supp-link--arrow martop3">
+							<a href="#" class="form__heading-supp-link form__heading-supp-link--arrow">
 								Edit shipping address
 							</a>
 
-							<div class="contact__item contact__item--rel">
+							<div class=" contact__item--rel">
 								 <button class="btn btn--md btn--success arrow-right">Place Order</button>
 								<div class="paiment-subtotal">
 									$486

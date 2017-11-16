@@ -1,0 +1,164 @@
+//======Placeholders=========//
+
+%bg-img-centering {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; 
+}
+
+%border-none {
+  border: none;
+}
+
+.form-style, %form-style {
+  border-radius: 0.5rem;
+  background: $light-gray;
+}
+
+%brad05rem {
+  border-radius: 0.5rem;
+}
+
+%border2px {
+  border: 2px solid $middle-gray;
+}
+
+%form-btn-sz-style {
+  border-radius: 0.5rem;
+  padding: 0.7em 0;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+%placeholder {
+  background-repeat: no-repeat;
+  background-position: 1em 50%;
+  padding-left: 3em;
+  font-size: 1.4em;
+}
+
+%inactive-placeholder {
+    background: $white;
+    color: $middle-gray;
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                background: $white;
+                color: $middle-gray;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+                background: $white;
+                color: $middle-gray;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+                background: $white;
+                color: $middle-gray;
+            }
+            &:placeholder { /* Firefox 18- */
+                background: $white;
+                color: $middle-gray;
+            }
+}
+
+%active-placeholder {
+     color: $dark;
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color: $dark;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+                color: $dark;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+                color: $dark;
+            }
+            &:placeholder { /* Firefox 18- */
+                color: $dark;
+            }
+}
+
+%link-sm-styles {
+  font-size: 1.4rem;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+%btn-link-styles {
+  text-decoration: none;
+  display: block;
+  color: $white;
+  
+}
+
+%flex-just-center {
+  display: flex;
+  justify-content: center;
+}
+
+
+.flex-just-between, %flex-just-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-just-between-ai-flex-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+%flex-center-alignement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flex-hor-align {
+  display: flex;
+  align-items: center;
+}
+
+%flex-vert-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+%checkbox-box {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: $green;
+  border-radius: 0.5rem;
+  left: -2rem;
+  top: 0.1rem;
+}
+
+%checkbox-content {
+  content:      "✓";
+  font-size:      1.2rem;
+  font-weight: bold;
+  color:        #fff;
+  text-align:     center;
+}
+
+
+%transition {
+  transition: all 0.2s;
+}
+
+
+%grey1.4 {
+  font-size: 1.4rem;
+  color: $middle-gray;
+
+}
+
+
+%select-def-arrow-removal {//removing default arrow
+   margin: 0;      
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   -webkit-appearance: none;
+   -moz-appearance: none;}
