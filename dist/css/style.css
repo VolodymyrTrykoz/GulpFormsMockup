@@ -499,6 +499,16 @@ th {
   -webkit-appearance: none;
   -moz-appearance: none; }
 
+.input, .btn, .divider, .divider:before, .button-select, .select-box, .select-item, .textarea, .card__table {
+  width: 100%; }
+
+.icon--e-mail-envelope, .icon--dark-padlock, .divider:before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
 @font-face {
   font-family: "social";
   src: url("../assets/fonts/myicons.eot");
@@ -558,13 +568,10 @@ html {
 .push-left {
   float: left; }
 
-.width35 {
+.form__method {
   width: 35%; }
 
-.width45 {
-  width: 45%; }
-
-.width50 {
+.form__address {
   width: 50%; }
 
 .container {
@@ -657,15 +664,9 @@ html {
       font-weight: 800; }
 
 .icon--e-mail-envelope, .icon--dark-padlock {
-  position: absolute;
-  top: 50%;
-  left: 1.5em;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%); }
+  left: 1.5em; }
 
 .input {
-  width: 100%;
   padding: 0.7em 1em 0.7em 3em;
   background: transparent; }
   .input--left {
@@ -693,14 +694,14 @@ html {
       color: #4d90b4; }
 
 .btn {
-  width: 100%;
   border: none; }
   .btn--lg {
     font-size: 1.8rem;
     margin: 1.5em auto 0 auto; }
   .btn--md {
     font-size: 1.6rem;
-    padding: 1em 2em; }
+    padding: 1em 2em;
+    margin-top: 2rem; }
   .btn--socialll {
     font-size: 1.4rem;
     width: 47%; }
@@ -735,19 +736,12 @@ html {
   text-align: center;
   margin: 0;
   color: #dee2e7;
-  width: 100%;
   height: 1.8rem;
   font-size: 1.5rem; }
   .divider:before {
     content: '';
     background: #dee2e7;
-    position: absolute;
     left: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    width: 100%;
     height: 0.15em; }
   .divider:after {
     content: attr(data-content);
@@ -794,8 +788,19 @@ html {
   color: #fff;
   text-align: center; }
 
-.form-wrapper-2 {
+.form-wrapper--sm {
   width: 32%; }
+  .form-wrapper--sm-betw {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 .form__heading {
   margin: 0;
@@ -811,39 +816,21 @@ html {
   color: #65abd0; }
   .form__heading-supp-link:hover {
     color: #4d90b4; }
-
-.small-forms-wrap {
-  width: 32%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.martop {
-  margin-top: 1.5rem; }
-
-.martop1 {
-  margin-top: 1rem; }
-
-.marbot3 {
-  margin-bottom: 3rem; }
-
-.martop3 {
-  margin-top: 3rem; }
-
-.marleft0 {
-  margin-left: 0; }
-
-.marright1 {
-  margin-right: 1rem; }
+  .form__heading-supp-link--arrow {
+    position: relative;
+    left: 5rem; }
+    .form__heading-supp-link--arrow:before {
+      font-family: "social";
+      content: '\EA01';
+      position: absolute;
+      top: 50%;
+      -webkit-transform: matrix(0, 1, -1, 0, 0, -7);
+          -ms-transform: matrix(0, 1, -1, 0, 0, -7);
+              transform: matrix(0, 1, -1, 0, 0, -7);
+      left: -2rem; }
 
 .subscribing-form {
+  margin-top: 2rem;
   background-color: #f2f5f8; }
 
 .subform-internal-wrap {
@@ -888,7 +875,6 @@ html {
     text-align: left; }
 
 .button-select, .select-box, .select-item {
-  width: 100%;
   height: 100%;
   outline: none;
   border-radius: 0.3rem;
@@ -906,11 +892,7 @@ html {
 
 .textarea {
   background: white;
-  width: 100%;
   padding: 0.8em; }
-
-.card__table {
-  width: 100%; }
 
 .table-heading {
   font-size: 1.4rem;
@@ -1016,10 +998,6 @@ input[type='radio']:checked:after {
 .card-bottom {
   margin-top: 3rem; }
 
-.form__heading-supp-link--arrow:before {
-  content: '‹';
-  padding-right: 0.5em; }
-
 .arrow-right:after {
   content: "\EA08";
   font-family: "social";
@@ -1033,7 +1011,7 @@ input[type='radio']:checked:after {
   background-repeat: no-repeat;
   background-position: 90% 50%; }
 
-.width30 {
+.box__int-wrap {
   width: 30%; }
 
 .paiment-subtotal {
@@ -1051,6 +1029,9 @@ input[type='radio']:checked:after {
 
 .item__value--sm {
   width: 35%; }
+
+.item__data-box {
+  width: 45%; }
 
 .card__box {
   margin-right: 1rem; }

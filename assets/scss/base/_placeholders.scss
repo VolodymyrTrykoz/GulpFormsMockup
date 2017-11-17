@@ -162,3 +162,14 @@
    box-sizing: border-box;
    -webkit-appearance: none;
    -moz-appearance: none;}
+
+
+%full-width {
+   width: 100%;
+}
+
+%absolute-vert-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
