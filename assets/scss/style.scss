@@ -40,7 +40,8 @@
 html {
   font-size: 62.5%;
 }
-
+//body {font-family: 'Cabin', sans-serif;}
+//button {font-family: inherit};
  * {
   font-family: 'Cabin', sans-serif;
  }
@@ -221,16 +222,18 @@ background-image: url("../img/form-bg2.jpg");
    @extend %transition;
    @extend %link-sm-styles;
    display: block;
-   margin-top: 1.5em;
    color: $middle-gray;
    cursor: initial;
    letter-spacing: 0.05em;
             &--center {
             text-align: center;
+            margin-top: 2.1rem;
+
             }
 
             &--link{
               font-weight: 600;
+              display: inline;
                     &:hover {
                     color:  $button-blue-light-hov; 
                     }       
@@ -531,7 +534,6 @@ background-image: url("../img/form-bg2.jpg");
 .button-select, %button-select {
   @extend %full-width;
   height: 100%;
-  outline: none;
   border-radius: 0.3rem;
   font-size: 1.6rem;
   padding: 0.7em;
@@ -582,12 +584,7 @@ background-image: url("../img/form-bg2.jpg");
 
 }
 
-.table-heading {
-  font-size: 1.4rem;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  color:  $middle-gray;
-}
+
 
 .text-align-cent {
   text-align: center;
@@ -613,8 +610,14 @@ background-image: url("../img/form-bg2.jpg");
   padding-left: 7em;
 }
 
-.border-bottom {
+.table-row {
   border-bottom: 2px solid $grey-divider-color;
+      &__heading {
+      font-size: 1.4rem;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      color:  $middle-gray;
+      }
 }
 
 .td-text {
@@ -712,12 +715,10 @@ input[type='radio']:checked:after {
   margin-left: 1em;
   color: $white;
   background: $middle-gray;
-  outline: none;
-
 }
 
 
-.card-bottom {
+.card__bottom {
   @extend %flex-center-alignement;
   margin-top: 3rem;
 }
