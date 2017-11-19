@@ -559,7 +559,7 @@ th {
 html {
   font-size: 62.5%; }
 
-* {
+body {
   font-family: 'Cabin', sans-serif; }
 
 .push-right {
@@ -871,7 +871,7 @@ html {
   font-size: 1.6rem;
   color: #c6ccd2;
   display: block;
-  margin: 1em 0; }
+  margin-top: 1em; }
   .item-name--left {
     text-align: left; }
 
@@ -1024,6 +1024,9 @@ input[type='radio']:checked:after {
 
 .contact__item--rel {
   position: relative; }
+
+.item__value {
+  margin-top: 1em; }
 
 .item__value--sm {
   width: 35%; }

@@ -7,7 +7,7 @@
 //Google fonts font-family: 'Cabin', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 
-
+//white-space: nowrap
 
 .icon {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -40,11 +40,9 @@
 html {
   font-size: 62.5%;
 }
-//body {font-family: 'Cabin', sans-serif;}
-//button {font-family: inherit};
- * {
-  font-family: 'Cabin', sans-serif;
- }
+body {font-family: 'Cabin', sans-serif;}
+
+
 
 .push-right {
   float: right;
@@ -523,7 +521,7 @@ background-image: url("../img/form-bg2.jpg");
   font-size: 1.6rem;
   color: $middle-gray;
   display: block;
-  margin: 1em 0;
+  margin-top: 1em;
 
         &--left {
           text-align: left;
@@ -772,6 +770,10 @@ input[type='radio']:checked:after {
   position: relative;
 }
 
+
+.item__value {
+  margin-top: 1em;
+}
 
 .item__value--sm {
   width: 35%;
